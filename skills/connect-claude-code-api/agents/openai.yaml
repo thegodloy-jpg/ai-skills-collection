@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claude Code 外部 API 接入"
+  short_description: "接入外部兼容 API，建立真实模型映射与标签，备份配置并验证调用"
+  default_prompt: "使用 $connect-claude-code-api，将指定外部 API 接入当前 Claude Code，并核对模型映射、显示标签和实际调用。"

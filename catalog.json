@@ -1,0 +1,1094 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-10",
+  "repository": "https://github.com/thegodloy-jpg/ai-skills-collection",
+  "skills": [
+    {
+      "id": "agent-browser",
+      "name": "agent-browser",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "浏览器自动化、网页操作与测试",
+      "path": "skills/agent-browser",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/vercel-labs/agent-browser",
+        "path": "skills/agent-browser",
+        "ref": "0207911f1bd4d0393eddaa90f2e50f96e0fb8974"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "3a7520e64de2dfaa516b6721c001e84e06e3c06a187b82af029ae721540ebfac"
+      },
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "014bb31e83d5c2e76aea1cc6e82217346ab41362f32cb355ad0f5c10aa0aeaff",
+        "SKILL.md": "3a7520e64de2dfaa516b6721c001e84e06e3c06a187b82af029ae721540ebfac"
+      }
+    },
+    {
+      "id": "build-technical-learning-loop",
+      "name": "build-technical-learning-loop",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "设计技术学习问题链与学习框架",
+      "path": "skills/build-technical-learning-loop",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "edec2901460a833cc8856b0d2b73115b189a9104c6a1362b3629834a936b5300",
+        "agents/openai.yaml": "2289cb200ad49f9baa41dce696469ceb3c7d3003f34308a764642dd007360838",
+        "assets/concise-learning-guide.md": "4dfb633c757fb772dc3408039ece0145acce784e6af8334950d36d1269864450",
+        "references/decomposition-patterns.md": "8873701e59f8d2e9082af62ccd09509ab32de66d8c5894d2d0498f4b8ffd0055",
+        "scripts/validate_markdown.py": "8e6703d67707df7d33231d56cfc5905026db8138533e1db54d326ba17f4d7c93"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "2289cb200ad49f9baa41dce696469ceb3c7d3003f34308a764642dd007360838",
+        "assets/concise-learning-guide.md": "4dfb633c757fb772dc3408039ece0145acce784e6af8334950d36d1269864450",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/decomposition-patterns.md": "8873701e59f8d2e9082af62ccd09509ab32de66d8c5894d2d0498f4b8ffd0055",
+        "scripts/validate_markdown.py": "8e6703d67707df7d33231d56cfc5905026db8138533e1db54d326ba17f4d7c93",
+        "SKILL.md": "edec2901460a833cc8856b0d2b73115b189a9104c6a1362b3629834a936b5300"
+      }
+    },
+    {
+      "id": "codebase-design",
+      "name": "codebase-design",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "模块接口与代码结构设计",
+      "path": "skills/codebase-design",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/engineering/codebase-design",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "DESIGN-IT-TWICE.md": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+        "SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f",
+        "DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "DESIGN-IT-TWICE.md": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2"
+      }
+    },
+    {
+      "id": "connect-claude-code-api",
+      "name": "connect-claude-code-api",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "将外部模型 API 接入 Claude Code",
+      "path": "skills/connect-claude-code-api",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "974725393f98804d709c684bac1e00426ec5522c1093733efa890af22d34e177",
+        "agents/openai.yaml": "bb49cc41b98af8f4735638d8f6b0645553cf8f358cfd14d7cdcf4e32d63d759b",
+        "references/deepseek.md": "7cbe61ef470533df7661d75cc7964874705ab6658117502d25ee60c37ff3d48d",
+        "scripts/verify_claude_api.py": "1336405e0aac1fa3ded0bec3d0d7a52c3c15ac305200e7f4523d50df7847abab"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "bb49cc41b98af8f4735638d8f6b0645553cf8f358cfd14d7cdcf4e32d63d759b",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/deepseek.md": "7cbe61ef470533df7661d75cc7964874705ab6658117502d25ee60c37ff3d48d",
+        "scripts/verify_claude_api.py": "1336405e0aac1fa3ded0bec3d0d7a52c3c15ac305200e7f4523d50df7847abab",
+        "SKILL.md": "974725393f98804d709c684bac1e00426ec5522c1093733efa890af22d34e177"
+      }
+    },
+    {
+      "id": "domain-modeling",
+      "name": "domain-modeling",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "领域建模、术语表与架构决策记录",
+      "path": "skills/domain-modeling",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/engineering/domain-modeling",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+      },
+      "changes": [],
+      "files_sha256": {
+        "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b",
+        "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+      }
+    },
+    {
+      "id": "find-skills",
+      "name": "find-skills",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "搜索和安装技能",
+      "path": "skills/find-skills",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/vercel-labs/skills",
+        "path": "skills/find-skills",
+        "ref": "c164f76adf927d30e8b17add45083d963da6dffe"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
+      },
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
+        "SKILL.md": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+        "ThirdPartyNoticeText.txt": "ad017718e485f2d634341e32e91c4e48feee89db01f04b17e4db6c4c912339a6"
+      }
+    },
+    {
+      "id": "frontend-design",
+      "name": "frontend-design",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "前端界面与视觉设计",
+      "path": "skills/frontend-design",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/anthropics/skills",
+        "path": "skills/frontend-design",
+        "ref": "9d630808e4add0a7146de4af9384155d5dee350a"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+      },
+      "changes": [],
+      "files_sha256": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+      }
+    },
+    {
+      "id": "grill-me",
+      "name": "grill-me",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "通过追问澄清需求和方案",
+      "path": "skills/grill-me",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/productivity/grill-me",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [
+        "grilling"
+      ],
+      "explicit_invocation_only": true,
+      "original_files_sha256": {
+        "SKILL.md": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637"
+      }
+    },
+    {
+      "id": "grill-with-docs",
+      "name": "grill-with-docs",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "追问方案，同时生成设计文档",
+      "path": "skills/grill-with-docs",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/engineering/grill-with-docs",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [
+        "grilling",
+        "domain-modeling"
+      ],
+      "explicit_invocation_only": true,
+      "original_files_sha256": {
+        "SKILL.md": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+        "agents/openai.yaml": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe"
+      }
+    },
+    {
+      "id": "grilling",
+      "name": "grilling",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "对计划和想法进行深入追问",
+      "path": "skills/grilling",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/productivity/grilling",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15"
+      }
+    },
+    {
+      "id": "handoff",
+      "name": "handoff",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "生成供下一会话或其他代理接手的文档",
+      "path": "skills/handoff",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/productivity/handoff",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": true,
+      "original_files_sha256": {
+        "SKILL.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+        "agents/openai.yaml": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3"
+      }
+    },
+    {
+      "id": "imagegen",
+      "name": "imagegen",
+      "scope": "system",
+      "distribution": "bundled",
+      "description": "生成和编辑图片",
+      "path": "skills/imagegen",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "installed-snapshot",
+        "url": "https://github.com/openai/skills",
+        "path": "skills/.system/imagegen",
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "LICENSE.txt": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc",
+        "SKILL.md": "706d4d96e1d5c9e6023fe3ccabba1bb34b364024d344fd25b8515ec7d28fe3c4",
+        "agents/openai.yaml": "1797be4076717806df54aa9331c07ac8eebe32c69f32132d5858712b05406146",
+        "assets/imagegen-small.svg": "087c1632a3b8a2ed4d6218952e7ba7ae2221a979f84233667ed2c587998784da",
+        "assets/imagegen.png": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20",
+        "references/cli.md": "29dc8c1e3e5d9a20aee587fedb46a464552b6ec118d93bbd90c8d86e30502c8c",
+        "references/codex-network.md": "cba3b4d24d30f38adf8021b6e9b49ec5261a9e45e7df31047ec451c916c99b0a",
+        "references/image-api.md": "695909437b792aff171477dba127476a11235c220beb06533cce7c1495a042c8",
+        "references/prompting.md": "d957a45cb24fe2cf1a85858674fc533f15a5f4621355f559a13a93168999c2dd",
+        "references/sample-prompts.md": "76cc8a2988efb6e844a99ff9908b2b11cc07467510fc909002abcc0ee3f0701b",
+        "scripts/image_gen.py": "3666b807de3f0a1d0a4a767b886d612c0b8f71025c500bba6693d1c6995a0873",
+        "scripts/remove_chroma_key.py": "fa2989807052b857bed08f7fee0caa2502b54c46afc0a6f28cd706c25f636630"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "1797be4076717806df54aa9331c07ac8eebe32c69f32132d5858712b05406146",
+        "assets/imagegen-small.svg": "087c1632a3b8a2ed4d6218952e7ba7ae2221a979f84233667ed2c587998784da",
+        "assets/imagegen.png": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20",
+        "LICENSE.txt": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc",
+        "references/cli.md": "29dc8c1e3e5d9a20aee587fedb46a464552b6ec118d93bbd90c8d86e30502c8c",
+        "references/codex-network.md": "cba3b4d24d30f38adf8021b6e9b49ec5261a9e45e7df31047ec451c916c99b0a",
+        "references/image-api.md": "695909437b792aff171477dba127476a11235c220beb06533cce7c1495a042c8",
+        "references/prompting.md": "d957a45cb24fe2cf1a85858674fc533f15a5f4621355f559a13a93168999c2dd",
+        "references/sample-prompts.md": "76cc8a2988efb6e844a99ff9908b2b11cc07467510fc909002abcc0ee3f0701b",
+        "scripts/image_gen.py": "3666b807de3f0a1d0a4a767b886d612c0b8f71025c500bba6693d1c6995a0873",
+        "scripts/remove_chroma_key.py": "fa2989807052b857bed08f7fee0caa2502b54c46afc0a6f28cd706c25f636630",
+        "SKILL.md": "706d4d96e1d5c9e6023fe3ccabba1bb34b364024d344fd25b8515ec7d28fe3c4"
+      }
+    },
+    {
+      "id": "improve-codebase-architecture",
+      "name": "improve-codebase-architecture",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "检查架构并提出改进机会",
+      "path": "skills/improve-codebase-architecture",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/engineering/improve-codebase-architecture",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [
+        "codebase-design",
+        "grilling",
+        "domain-modeling"
+      ],
+      "explicit_invocation_only": true,
+      "original_files_sha256": {
+        "HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+        "SKILL.md": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392",
+        "agents/openai.yaml": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1",
+        "HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392"
+      }
+    },
+    {
+      "id": "life-decision-guide",
+      "name": "life-decision-guide",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "基于高性价比人生指南辅助决策",
+      "path": "skills/life-decision-guide",
+      "license": "MIT",
+      "source": {
+        "kind": "installed-snapshot",
+        "url": "https://github.com/eternity4719/HowToLiveBetter",
+        "path": "skills/life-decision-guide",
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "README.md": "97a2e577cc1203e7570a51803a04f1e52b29b6bc34cf2c6a413a1417fa08d149",
+        "SKILL.md": "096054c6b39229544c6ee74dd3728642c985914b4d95345f4dec4278620167ea"
+      },
+      "changes": [
+        "Added collection-context notice to README.md"
+      ],
+      "files_sha256": {
+        "LICENSE-BOOK.txt": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+        "LICENSE.txt": "b5637b996d72e74dac01e8799701ff6440b5a979cd15a29ac120e7ae57963c67",
+        "README.md": "91e175fc8154c6aa7f7b89c106c44333834d44f16874223a1b7d0a294dedd4e6",
+        "SKILL.md": "096054c6b39229544c6ee74dd3728642c985914b4d95345f4dec4278620167ea"
+      }
+    },
+    {
+      "id": "openai-docs",
+      "name": "openai-docs",
+      "scope": "system",
+      "distribution": "bundled",
+      "description": "检索官方 OpenAI 文档",
+      "path": "skills/openai-docs",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "installed-snapshot",
+        "url": "https://github.com/openai/skills",
+        "path": "skills/.system/openai-docs",
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "LICENSE.txt": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc",
+        "SKILL.md": "8ce8021101bcea594ff92ee6cfd8ca7641a49ee66d7bc6070555f1a33fc239d9",
+        "agents/openai.yaml": "0dd6c5ffa81a09782fd24cfa9fe1ec5c9633c90500b166ae18a462e613e876be",
+        "assets/openai-small.svg": "85ef0a2cde497872edec1525f1d538ccc42b33ff47acdbb88499a1631a4bdb21",
+        "assets/openai.png": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c",
+        "references/codex-self-knowledge.md": "f945bf2a7cea6892d7a11ac38fb18b744fefd6d273654a8410c4c79e9f647fbe",
+        "references/latest-model.md": "c6908732acbf2c6732614d615856b5582964521a319da842cc9379f9822fbf34",
+        "references/mcp-diagnostics.md": "e9df2b2f8faa28930db4a2937cdb3665b4548ac958e80a8601a5dd0da1e6fad0",
+        "references/model-migration.md": "e2dc95fa96cf68c1e16f5bae265ae660bede705940602ba86ab6219c514a976d",
+        "references/model-selection.md": "ce020100a28004500c927abcd57cff154c5c360eb72d918ef7d72492e2484cce",
+        "references/official-docs.md": "b2301d72b8092be5f5727d8d1cbc75740887d836f4f13b469f40c1db16b39fe3",
+        "references/prompting-guide.md": "7e7cd7ff89f6211d1f881b8d394e92f416febe6eae2fdfd230c5b5c346bf8a93",
+        "references/upgrade-guide.md": "fada5e0c951a50e21c8ee9f51891159b539b651bfbdb92385fada4cbac93dab5",
+        "references/upgrading-to-gpt-6-astra.md": "cf4ebc3c89a5e2062e553626dcd27fab13f4870d3046c631ed91a0bc301bb32d",
+        "scripts/fetch-codex-manual.mjs": "1b9a36d3e59ddff3317d1faa182e5cd4967db14ff993593a5f98d5682dbffbe4",
+        "scripts/resolve-latest-model-info": "8f5006efa15c034ede29821b627d7b86c43f7dfaab422d335f45b9be8d04e2d5",
+        "scripts/resolve-latest-model-info.cjs": "91eb045abbf96ffb361e6ec2d3606540570fb32383edb22061f5549381ce0ee5"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "0dd6c5ffa81a09782fd24cfa9fe1ec5c9633c90500b166ae18a462e613e876be",
+        "assets/openai-small.svg": "85ef0a2cde497872edec1525f1d538ccc42b33ff47acdbb88499a1631a4bdb21",
+        "assets/openai.png": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c",
+        "LICENSE.txt": "44e03f7e263eb3ad256440c1eeab5e49168baff5a78ecef9a5447261cf3a91bc",
+        "references/codex-self-knowledge.md": "f945bf2a7cea6892d7a11ac38fb18b744fefd6d273654a8410c4c79e9f647fbe",
+        "references/latest-model.md": "c6908732acbf2c6732614d615856b5582964521a319da842cc9379f9822fbf34",
+        "references/mcp-diagnostics.md": "e9df2b2f8faa28930db4a2937cdb3665b4548ac958e80a8601a5dd0da1e6fad0",
+        "references/model-migration.md": "e2dc95fa96cf68c1e16f5bae265ae660bede705940602ba86ab6219c514a976d",
+        "references/model-selection.md": "ce020100a28004500c927abcd57cff154c5c360eb72d918ef7d72492e2484cce",
+        "references/official-docs.md": "b2301d72b8092be5f5727d8d1cbc75740887d836f4f13b469f40c1db16b39fe3",
+        "references/prompting-guide.md": "7e7cd7ff89f6211d1f881b8d394e92f416febe6eae2fdfd230c5b5c346bf8a93",
+        "references/upgrade-guide.md": "fada5e0c951a50e21c8ee9f51891159b539b651bfbdb92385fada4cbac93dab5",
+        "references/upgrading-to-gpt-6-astra.md": "cf4ebc3c89a5e2062e553626dcd27fab13f4870d3046c631ed91a0bc301bb32d",
+        "scripts/fetch-codex-manual.mjs": "1b9a36d3e59ddff3317d1faa182e5cd4967db14ff993593a5f98d5682dbffbe4",
+        "scripts/resolve-latest-model-info": "8f5006efa15c034ede29821b627d7b86c43f7dfaab422d335f45b9be8d04e2d5",
+        "scripts/resolve-latest-model-info.cjs": "91eb045abbf96ffb361e6ec2d3606540570fb32383edb22061f5549381ce0ee5",
+        "SKILL.md": "8ce8021101bcea594ff92ee6cfd8ca7641a49ee66d7bc6070555f1a33fc239d9"
+      }
+    },
+    {
+      "id": "personal-kb-summarizer",
+      "name": "personal-kb-summarizer",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "将对话整理为知识库结构化摘要",
+      "path": "skills/personal-kb-summarizer",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "25eb630562f624e34e1fae1da1e8588f0daba336383d1cca9073ed834a355f1e",
+        "agents/openai.yaml": "083273bf5b3437e286390e72891c4c9e4d66d4523594e04c6e94d5376886e8c1",
+        "references/summary-result-schema.json": "38056cdb56d5a64766d972b9d6a0a55bbad376f9eeac28c37f2b0dcc4862c42f"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "083273bf5b3437e286390e72891c4c9e4d66d4523594e04c6e94d5376886e8c1",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/summary-result-schema.json": "38056cdb56d5a64766d972b9d6a0a55bbad376f9eeac28c37f2b0dcc4862c42f",
+        "SKILL.md": "25eb630562f624e34e1fae1da1e8588f0daba336383d1cca9073ed834a355f1e"
+      }
+    },
+    {
+      "id": "playwright",
+      "name": "playwright",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "通过 Playwright 自动操作浏览器",
+      "path": "skills/playwright",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "installed-snapshot",
+        "url": "https://github.com/openai/skills",
+        "path": "skills/.curated/playwright",
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "LICENSE.txt": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda",
+        "NOTICE.txt": "a43ad22fc7381a9901c88798479a0617b8397581c67847401d1971f8738d3e03",
+        "SKILL.md": "c52cc95125b720cdc3c9829b0294c2752d4ae9b85a5282aa153da8bba929af87",
+        "agents/openai.yaml": "dfc22e6c764f025e5e520fe2e1781e119f6262f406feddafe84ff8aaf9a4ff21",
+        "assets/playwright-small.svg": "5ecfaf38d817a6abbc453114191cc9afb3f0799a557dae1c2c1a1445c8a7b386",
+        "assets/playwright.png": "521669f088c838196c6c852ccc9abdd7234d8f37fc9a8a7a9af7db2d50193381",
+        "references/cli.md": "da94ffe5a7c368e233eac1cdfa2d5207cb85a2a0571607af0e43402c6e12cd45",
+        "references/workflows.md": "621d2b8542a91d1d5cd65a5a7774ea250683e4c217e00e9c90d301eb6367d86e",
+        "scripts/playwright_cli.sh": "3fce0ea2b9875179f701d9f4c03425545c441b2769cd6c6df964cc7d1d1dbfa8"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "dfc22e6c764f025e5e520fe2e1781e119f6262f406feddafe84ff8aaf9a4ff21",
+        "assets/playwright-small.svg": "5ecfaf38d817a6abbc453114191cc9afb3f0799a557dae1c2c1a1445c8a7b386",
+        "assets/playwright.png": "521669f088c838196c6c852ccc9abdd7234d8f37fc9a8a7a9af7db2d50193381",
+        "LICENSE.txt": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda",
+        "NOTICE.txt": "a43ad22fc7381a9901c88798479a0617b8397581c67847401d1971f8738d3e03",
+        "references/cli.md": "da94ffe5a7c368e233eac1cdfa2d5207cb85a2a0571607af0e43402c6e12cd45",
+        "references/workflows.md": "621d2b8542a91d1d5cd65a5a7774ea250683e4c217e00e9c90d301eb6367d86e",
+        "scripts/playwright_cli.sh": "3fce0ea2b9875179f701d9f4c03425545c441b2769cd6c6df964cc7d1d1dbfa8",
+        "SKILL.md": "c52cc95125b720cdc3c9829b0294c2752d4ae9b85a5282aa153da8bba929af87"
+      }
+    },
+    {
+      "id": "setup-matt-pocock-skills",
+      "name": "setup-matt-pocock-skills",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "配置项目的工程技能工作流",
+      "path": "skills/setup-matt-pocock-skills",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/engineering/setup-matt-pocock-skills",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": true,
+      "original_files_sha256": {
+        "domain.md": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+        "issue-tracker-github.md": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
+        "issue-tracker-gitlab.md": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
+        "issue-tracker-local.md": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+        "SKILL.md": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
+        "triage-labels.md": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
+        "agents/openai.yaml": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939",
+        "domain.md": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+        "issue-tracker-github.md": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
+        "issue-tracker-gitlab.md": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
+        "issue-tracker-local.md": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
+        "triage-labels.md": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa"
+      }
+    },
+    {
+      "id": "skill-creator",
+      "name": "skill-creator",
+      "scope": "system",
+      "distribution": "bundled",
+      "description": "创建和维护技能",
+      "path": "skills/skill-creator",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "installed-snapshot",
+        "url": "https://github.com/openai/skills",
+        "path": "skills/.system/skill-creator",
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "license.txt": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+        "SKILL.md": "cccd291077ec57c6f50ca6529f0f3fb93212da09473effb2fcec808e81b21288",
+        "agents/openai.yaml": "b750627cdd588fdbb5b46e854d3384d1a504fad3b8ed73ca5d7ead3804df78b6",
+        "assets/skill-creator-small.svg": "edb19a0c59f9a1b5253b9af6d2f9f03cac27b2fe6a0275ebccbbdbff07891a1a",
+        "assets/skill-creator.png": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+        "references/openai_yaml.md": "7039d465b05342cbacf861f08d20192ab1eeee112bc5d8ff0fb66234756887a9",
+        "scripts/generate_openai_yaml.py": "30c73f1ea7d47dbab2b231bb92c5bf9026f1ad14ba8e3b3a4a544092c4d24ebe",
+        "scripts/init_skill.py": "74dfa9361a93bee6932d6cbb332ed19ac26a27ba3800e69fb07ba7512c1025f9",
+        "scripts/quick_validate.py": "6068513d924ed3559e186dfcdead7439129828dcf402167fd925c06dffbf2806"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "b750627cdd588fdbb5b46e854d3384d1a504fad3b8ed73ca5d7ead3804df78b6",
+        "assets/skill-creator-small.svg": "edb19a0c59f9a1b5253b9af6d2f9f03cac27b2fe6a0275ebccbbdbff07891a1a",
+        "assets/skill-creator.png": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+        "license.txt": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+        "references/openai_yaml.md": "7039d465b05342cbacf861f08d20192ab1eeee112bc5d8ff0fb66234756887a9",
+        "scripts/generate_openai_yaml.py": "30c73f1ea7d47dbab2b231bb92c5bf9026f1ad14ba8e3b3a4a544092c4d24ebe",
+        "scripts/init_skill.py": "74dfa9361a93bee6932d6cbb332ed19ac26a27ba3800e69fb07ba7512c1025f9",
+        "scripts/quick_validate.py": "6068513d924ed3559e186dfcdead7439129828dcf402167fd925c06dffbf2806",
+        "SKILL.md": "cccd291077ec57c6f50ca6529f0f3fb93212da09473effb2fcec808e81b21288"
+      }
+    },
+    {
+      "id": "skill-installer",
+      "name": "skill-installer",
+      "scope": "system",
+      "distribution": "bundled",
+      "description": "从 GitHub 安装技能",
+      "path": "skills/skill-installer",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "installed-snapshot",
+        "url": "https://github.com/openai/skills",
+        "path": "skills/.system/skill-installer",
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "LICENSE.txt": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+        "SKILL.md": "2892d8b2fb11631132118f340aed80ae17e59d5a571fc2c4f4a4a7e73f139d52",
+        "agents/openai.yaml": "bd64b4d6893138706b3e3540f266ab809ccdcd08375652ae9f9d1e029fe50d02",
+        "assets/skill-installer-small.svg": "099e5a4b5e5f0f918a8de0d2059f0a86211da623dbb75f86f13dc9f7c08c778d",
+        "assets/skill-installer.png": "d0a230b1a79b71b858b7c215a0fbb0768d6459c14ea4ef80c61592629bf0e605",
+        "scripts/github_utils.py": "2f9702afb9f0da740181fa4a3214f663e460f80cd5cea2e7dcaab00ad269082e",
+        "scripts/install-skill-from-github.py": "110cc7e4e395c2c9ba070d47db7d21be5164591c35015ae364fc9c9905b08de8",
+        "scripts/list-skills.py": "2cd6eecbaf9be7c86e80a14d7042f95d6abb83b6baee5f17dd075fa7a71c83de"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "bd64b4d6893138706b3e3540f266ab809ccdcd08375652ae9f9d1e029fe50d02",
+        "assets/skill-installer-small.svg": "099e5a4b5e5f0f918a8de0d2059f0a86211da623dbb75f86f13dc9f7c08c778d",
+        "assets/skill-installer.png": "d0a230b1a79b71b858b7c215a0fbb0768d6459c14ea4ef80c61592629bf0e605",
+        "LICENSE.txt": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+        "scripts/github_utils.py": "2f9702afb9f0da740181fa4a3214f663e460f80cd5cea2e7dcaab00ad269082e",
+        "scripts/install-skill-from-github.py": "110cc7e4e395c2c9ba070d47db7d21be5164591c35015ae364fc9c9905b08de8",
+        "scripts/list-skills.py": "2cd6eecbaf9be7c86e80a14d7042f95d6abb83b6baee5f17dd075fa7a71c83de",
+        "SKILL.md": "2892d8b2fb11631132118f340aed80ae17e59d5a571fc2c4f4a4a7e73f139d52"
+      }
+    },
+    {
+      "id": "tdd",
+      "name": "tdd",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "测试驱动开发",
+      "path": "skills/tdd",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/engineering/tdd",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [
+        "codebase-design"
+      ],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "SKILL.md": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+        "tests.md": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+        "agents/openai.yaml": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b"
+      },
+      "changes": [],
+      "files_sha256": {
+        "agents/openai.yaml": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "SKILL.md": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+        "tests.md": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a"
+      }
+    },
+    {
+      "id": "triage",
+      "name": "triage",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "整理、分类和核实 Issue 与 PR",
+      "path": "skills/triage",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/mattpocock/skills",
+        "path": "skills/engineering/triage",
+        "ref": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "dependencies": [
+        "grilling",
+        "domain-modeling"
+      ],
+      "explicit_invocation_only": true,
+      "original_files_sha256": {
+        "AGENT-BRIEF.md": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+        "OUT-OF-SCOPE.md": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+        "SKILL.md": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+        "agents/openai.yaml": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c"
+      },
+      "changes": [],
+      "files_sha256": {
+        "AGENT-BRIEF.md": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+        "agents/openai.yaml": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "OUT-OF-SCOPE.md": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+        "SKILL.md": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf"
+      }
+    },
+    {
+      "id": "google-drive:google-docs",
+      "name": "google-docs",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "创建和编辑 Google Docs",
+      "path": null,
+      "license": "MIT (manifest)",
+      "source": {
+        "kind": "official-plugin",
+        "url": "https://github.com/openai/plugins/tree/main/plugins/google-drive",
+        "plugin": "google-drive",
+        "version": "0.1.20"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "google-drive:google-drive",
+      "name": "google-drive",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "查找和管理云端文件",
+      "path": null,
+      "license": "MIT (manifest)",
+      "source": {
+        "kind": "official-plugin",
+        "url": "https://github.com/openai/plugins/tree/main/plugins/google-drive",
+        "plugin": "google-drive",
+        "version": "0.1.20"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "google-drive:google-drive-comments",
+      "name": "google-drive-comments",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "处理云端文件评论",
+      "path": null,
+      "license": "MIT (manifest)",
+      "source": {
+        "kind": "official-plugin",
+        "url": "https://github.com/openai/plugins/tree/main/plugins/google-drive",
+        "plugin": "google-drive",
+        "version": "0.1.20"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "google-drive:google-sheets",
+      "name": "google-sheets",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "编辑 Google Sheets",
+      "path": null,
+      "license": "MIT (manifest)",
+      "source": {
+        "kind": "official-plugin",
+        "url": "https://github.com/openai/plugins/tree/main/plugins/google-drive",
+        "plugin": "google-drive",
+        "version": "0.1.20"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "google-drive:google-slides",
+      "name": "google-slides",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "编辑 Google Slides",
+      "path": null,
+      "license": "MIT (manifest)",
+      "source": {
+        "kind": "official-plugin",
+        "url": "https://github.com/openai/plugins/tree/main/plugins/google-drive",
+        "plugin": "google-drive",
+        "version": "0.1.20"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "pages:maintain-space",
+      "name": "maintain-space",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "维护页面内容",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "pages",
+        "version": "0.1.21"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "pages:manage-schedules",
+      "name": "manage-schedules",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "管理页面定时任务",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "pages",
+        "version": "0.1.21"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "pages:organize-space",
+      "name": "organize-space",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "组织页面结构",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "pages",
+        "version": "0.1.21"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "pages:write-page",
+      "name": "write-page",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "创建和编辑页面",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "pages",
+        "version": "0.1.21"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "work-pets:create-pet",
+      "name": "create-pet",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "创建工作宠物",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "work-pets",
+        "version": "0.1.6"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "work-pets:pets",
+      "name": "pets",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "管理工作宠物",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "work-pets",
+        "version": "0.1.6"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "work-pets:update-pet",
+      "name": "update-pet",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "更新工作宠物",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "work-pets",
+        "version": "0.1.6"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "spreadsheets:Spreadsheets",
+      "name": "Spreadsheets",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "创建和编辑电子表格文件",
+      "path": null,
+      "license": "Unverified",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "spreadsheets",
+        "version": "26.903.11726"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "spreadsheets:excel-live-control",
+      "name": "excel-live-control",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "控制已连接的 Excel 会话",
+      "path": null,
+      "license": "Unverified",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "spreadsheets",
+        "version": "26.903.11726"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "documents:documents",
+      "name": "documents",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "创建和编辑 Word 文档",
+      "path": null,
+      "license": "Restricted redistribution",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "documents",
+        "version": "26.903.11726"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "pdf:pdf",
+      "name": "pdf",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "读取和生成 PDF",
+      "path": null,
+      "license": "Unverified",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "pdf",
+        "version": "26.903.11726"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "presentations:Presentations",
+      "name": "Presentations",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "创建和编辑演示文稿",
+      "path": null,
+      "license": "Unverified",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "presentations",
+        "version": "26.903.11726"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "sites:sites",
+      "name": "sites",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "构建和发布网站",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": "https://openai.com/policies/chatgpt-sites-terms/",
+        "plugin": "sites",
+        "version": "1.0.1"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "template-creator:template-creator",
+      "name": "template-creator",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "从参考资料创建可复用模板",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "template-creator",
+        "version": "26.903.11726"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "plugin-management:plugin-management",
+      "name": "plugin-management",
+      "scope": "plugin",
+      "distribution": "official-install",
+      "description": "管理插件连接与权限",
+      "path": null,
+      "license": "Proprietary",
+      "source": {
+        "kind": "official-plugin",
+        "url": null,
+        "plugin": "plugin-management",
+        "version": "0.1.0"
+      },
+      "dependencies": [],
+      "reason": "Use the official plugin for its connector/runtime and redistribution terms."
+    },
+    {
+      "id": "review-agent",
+      "name": "review-agent",
+      "scope": "system",
+      "distribution": "official-install",
+      "description": "对代码变更进行只读审查",
+      "path": null,
+      "license": "Unverified",
+      "source": {
+        "kind": "product-bundled",
+        "url": "https://github.com/openai/skills"
+      },
+      "dependencies": [],
+      "reason": "No redistribution license found for the installed snapshot; retained as an inventory entry."
+    }
+  ]
+}

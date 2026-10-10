@@ -1,0 +1,4 @@
+interface:
+  display_name: "技术学习闭环"
+  short_description: "继承前序接口，构建边界清晰、精简且可验证的技术学习闭环"
+  default_prompt: "使用 $build-technical-learning-loop 继承前序目标与字段，严格执行我指定的阶段，并保持决策边界和下游交接清晰。"

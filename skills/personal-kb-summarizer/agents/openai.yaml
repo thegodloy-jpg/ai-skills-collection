@@ -1,0 +1,4 @@
+interface:
+  display_name: "个人知识库总结器"
+  short_description: "将对话提炼为结构化、可追溯、可校验的个人知识条目结果"
+  default_prompt: "使用 $personal-kb-summarizer 将这段对话整理为结构化 SummaryResult JSON。"

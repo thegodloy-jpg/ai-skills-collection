@@ -1,0 +1,3 @@
+# Preserve upstream file bytes and recorded SHA-256 checksums.
+* -text
+*.png binary
