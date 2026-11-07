@@ -1,0 +1,69 @@
+case_id: "${CASE_ID}"
+title: "${TITLE}"
+status: "observed"  # observed | reproduced | workaround_validated | upstream_submitted | resolved_verified
+report_level: "detailed"  # compact | detailed
+
+workspace:
+  root: "${WORKSPACE_ROOT}"
+  model_slug: "${MODEL_SLUG}"
+  case_id: "${CASE_ID}"
+  output_dir: "${OUTPUT_DIR}"
+
+problem:
+  symptom: "${SYMPTOM}"
+  impact: "${IMPACT}"
+  first_failing_operation: "${FIRST_FAILING_OPERATION}"
+  low_level_error: "${LOW_LEVEL_ERROR}"
+  trigger: "${TRIGGER}"
+
+environment:
+  model: "${MODEL}"
+  hardware: "${HARDWARE}"
+  topology: "${TOPOLOGY}"
+  image: "${IMAGE}"
+  image_digest: "${IMAGE_DIGEST}"
+  software: {}
+
+tested_revision: "${TESTED_REVISION}"
+current_upstream_revision: "${CURRENT_UPSTREAM_REVISION}"
+evidence_time_window: "${EVIDENCE_TIME_WINDOW}"
+
+baseline:
+  description: "${BASELINE_DESCRIPTION}"
+  result: "${BASELINE_RESULT}"
+
+variant:
+  description: "${VARIANT_DESCRIPTION}"
+  result: "${VARIANT_RESULT}"
+
+controlled_variable: "${CONTROLLED_VARIABLE}"
+
+reproduction:
+  attempts: 0
+  reproduced: 0
+  first_failure_boundary: "${FIRST_FAILURE_BOUNDARY}"
+  request_successes: null
+  request_failures: null
+
+root_cause:
+  confidence: "observed"  # observed | associated | mechanism_supported | confirmed
+  mechanism: "${MECHANISM_OR_CURRENT_HYPOTHESIS}"
+  invalid_assumption: "${INVALID_ASSUMPTION}"
+  broken_invariant: "${BROKEN_INVARIANT}"
+  competing_hypotheses: []
+
+resolution:
+  type: "none"  # none | configuration_correction | workaround | local_patch | upstream_fix
+  description: "${RESOLUTION}"
+  new_invariant: "${NEW_INVARIANT}"
+  validation: "${VALIDATION}"
+  limitations: []
+
+evidence: []
+
+upstream:
+  repository: "${OWNER_REPOSITORY}"
+  related_issues: []
+  related_prs: []
+  issue_url: null
+  pr_url: null

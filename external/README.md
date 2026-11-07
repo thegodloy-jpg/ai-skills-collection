@@ -1,6 +1,6 @@
-# 官方插件与产品内置技能索引
+# 上游、插件与产品内置技能安装索引
 
-这里记录主清单中未打包源码的 **21 项技能**：20 项来自产品插件，1 项为产品内置的 `review-agent`。本页只包含用途和公开安装指引，不包含这些插件的原始技能正文、连接器或运行时。
+这里记录主清单中未打包源码的 **22 项技能**：20 项来自产品插件、产品内置的 `review-agent`，以及许可限制再分发的本地 `pptx` 快照。本页只包含用途和公开安装指引，不包含这些受限技能的原始正文、连接器或运行时。
 
 ## 安装入口
 
@@ -33,6 +33,7 @@
 | `template-creator:template-creator` | 从参考资料创建可复用模板 | Template Creator |
 | `plugin-management:plugin-management` | 管理插件连接与权限 | Plugin Management |
 | `review-agent` | 对代码变更进行只读审查 | 宿主产品提供时使用；未核实单独公开安装入口 |
+| `pptx` | 创建、编辑和检查 PowerPoint 文件 | 查看 [Anthropic 的公开上游目录](https://github.com/anthropics/skills/tree/main/skills/pptx)，按目标版本及其许可安装 |
 
 ## 为什么仅提供索引
 
@@ -41,6 +42,7 @@
 - Google Drive 的插件元数据标为 MIT，但当前安装快照与公开版本不同，也没有取得相应许可正文；同时它依赖账户连接器。这里保留官方入口与该区别，未把其当前缓存作为可独立使用的开源包发布。
 - PDF、Presentations、Spreadsheets 当前快照的许可正文未核实，部分功能还依赖产品提供的运行时。
 - `review-agent` 当前安装目录没有独立再分发许可。
+- 本地 `pptx/LICENSE.txt` 明确限制复制、衍生及向第三方分发；当前公开上游的许可与本地快照不能直接等同，因此本合集只索引安装来源，不复制本地文件。
 
 这些判断针对本次清单对应的安装快照，不替代各项目以后公布的授权。完整版本和来源元数据见 [catalog.json](../catalog.json)。
 

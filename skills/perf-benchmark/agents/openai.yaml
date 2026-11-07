@@ -1,0 +1,6 @@
+interface:
+  display_name: "Performance Benchmark Report"
+  short_description: "Generate formatted Excel reports from benchmark CSV data"
+  default_prompt: "Use $perf-benchmark to generate a formatted Excel performance report from benchmark CSV files."
+policy:
+  allow_implicit_invocation: true

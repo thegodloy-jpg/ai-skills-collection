@@ -1,0 +1,5 @@
+interface:
+  display_name: "Inference Benchmark Matrix"
+  short_description: "Run controlled fixed-scenario inference A/B benchmarks"
+  default_prompt: "Use $inference-benchmark-matrix to plan, execute, or validate a fixed-scenario inference benchmark matrix with strict cache and evidence checks."
+  allow_implicit_invocation: true

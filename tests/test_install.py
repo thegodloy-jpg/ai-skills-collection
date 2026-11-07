@@ -53,13 +53,32 @@ class InstallTests(unittest.TestCase):
     def test_all_installs_exactly_bundled_entries(self):
         catalog = json.loads((REPO_ROOT / "catalog.json").read_text(encoding="utf-8-sig"))
         expected = {entry["name"] for entry in catalog["skills"] if entry["distribution"] == "bundled"}
-        self.assertEqual(len(expected), 23)
+        self.assertEqual(len(expected), 33)
         with tempfile.TemporaryDirectory() as temporary:
             destination = Path(temporary) / "skills"
             result = self.run_installer(destination, "--all")
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertEqual({path.name for path in destination.iterdir()}, expected)
             self.assertTrue(all((destination / name / "SKILL.md").is_file() for name in expected))
+
+    def test_performance_skill_installs_required_siblings(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            destination = Path(temporary) / "skills"
+            result = self.run_installer(destination, "--skills", "perf-e2e-compare")
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual(
+                {path.name for path in destination.iterdir()},
+                {"perf-e2e-compare", "perf-benchmark", "day0-workspace"},
+            )
+            self.assertTrue((destination / "perf-benchmark" / "scripts" / "build_perf_xlsx.ps1").is_file())
+
+    def test_restricted_pptx_snapshot_is_not_copied(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            destination = Path(temporary) / "skills"
+            result = self.run_installer(destination, "--skills", "pptx")
+            self.assertEqual(result.returncode, 1)
+            self.assertIn("requires official installation", result.stderr)
+            self.assertFalse(destination.exists())
 
 
 if __name__ == "__main__":

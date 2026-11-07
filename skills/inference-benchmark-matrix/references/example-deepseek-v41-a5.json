@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "experiment_id": "deepseek-v41-a5-core3",
+  "arm": {
+    "id": "A5",
+    "parent": null,
+    "intended_delta": "official-image DSpark5 baseline",
+    "image": "quay.io/ascend/vllm-ascend:deepseek-v4.1-flash-a3",
+    "image_digest": "verify-before-run",
+    "service_command_sha256": "verify-before-run"
+  },
+  "benchmark": {
+    "script_path": "@bundled",
+    "script_sha256": "2cf49c2656549569d7be41367564a6a8ea7237190cc9ae18917c8b18c4a947b1",
+    "model_path": "/var/ai-model/DeepSeek-V4.1-Flash-w8a8",
+    "model_name": "deepseek-v41",
+    "base_url": "http://192.0.2.252:8000/v1",
+    "accelerator_type": "ascend",
+    "temperature": 0,
+    "result_root": "/var/ai-model/benchmark-results",
+    "extra_args": []
+  },
+  "cache": {
+    "policy": "cold",
+    "strict": true
+  },
+  "repetitions": 1,
+  "scenarios": [
+    {
+      "id": "2k2k-c4",
+      "input_tokens": 2048,
+      "output_tokens": 2048,
+      "num_prompts": 4,
+      "max_concurrency": 4,
+      "prefix_rate": 0.0
+    },
+    {
+      "id": "2k2k-c32",
+      "input_tokens": 2048,
+      "output_tokens": 2048,
+      "num_prompts": 32,
+      "max_concurrency": 32,
+      "prefix_rate": 0.0
+    },
+    {
+      "id": "64k1k-c4",
+      "input_tokens": 65536,
+      "output_tokens": 1024,
+      "num_prompts": 4,
+      "max_concurrency": 4,
+      "prefix_rate": 0.0
+    }
+  ]
+}

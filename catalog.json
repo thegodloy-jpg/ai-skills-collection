@@ -62,6 +62,39 @@
       }
     },
     {
+      "id": "chat-context-archiver",
+      "name": "chat-context-archiver",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "将对话上下文归档为结构化 Markdown",
+      "path": "skills/chat-context-archiver",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "assets/context_template.md": "6de2b8b495284e6f590f59ad8a737be2383cac769be14007503c4a9e5cb0df22",
+        "references/quality_checklist.md": "0887e7b043ad5ee88e9721bdbcc203bea4da508f51727c350a499ad9765c0148",
+        "scripts/export_context.ps1": "ba13caecff7a00b8adaa20b2e8a12672eb43397d53769ca7901267801a24d5a6",
+        "SKILL.md": "1f0f530c6e9e25507ef7484ddb38b9412b344a97a8b0dfb4b96f08f2ef291dd8"
+      },
+      "changes": [
+        "Included the collection MIT license for the owner-supplied local snapshot."
+      ],
+      "files_sha256": {
+        "assets/context_template.md": "6de2b8b495284e6f590f59ad8a737be2383cac769be14007503c4a9e5cb0df22",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/quality_checklist.md": "0887e7b043ad5ee88e9721bdbcc203bea4da508f51727c350a499ad9765c0148",
+        "scripts/export_context.ps1": "ba13caecff7a00b8adaa20b2e8a12672eb43397d53769ca7901267801a24d5a6",
+        "SKILL.md": "1f0f530c6e9e25507ef7484ddb38b9412b344a97a8b0dfb4b96f08f2ef291dd8"
+      }
+    },
+    {
       "id": "codebase-design",
       "name": "codebase-design",
       "scope": "user",
@@ -124,6 +157,42 @@
       }
     },
     {
+      "id": "day0-workspace",
+      "name": "day0-workspace",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "管理模型与硬件场景身份、实验和证据目录",
+      "path": "skills/day0-workspace",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "agents/openai.yaml": "6e305a21e3d779119abada75be23618f3430d1f4faf1bc4e8caa37ba5405bbcf",
+        "references/schema.md": "dcc30c5bf31532043deddbdedc00f03ebcc386dabcc9fcfdcd85dab477871731",
+        "scripts/day0ctl.py": "17eb57d0825ebbd0da996b8da4078e3fc3690e55f53d72df12ef1c495690fd53",
+        "scripts/self_test.py": "11b44c5a74e42aaef6cc30bc09a6adca07a5573381c14f6939c216bc815cb225",
+        "SKILL.md": "9982b05c3e36eca07587f2e06b9fbd115d41ef66b062451c2e853ea300a29d32"
+      },
+      "changes": [
+        "Generalized environment-specific paths/hosts and synchronized bundled script provenance where applicable: scripts/day0ctl.py, SKILL.md",
+        "Included the collection MIT license for the owner-supplied local snapshot."
+      ],
+      "files_sha256": {
+        "agents/openai.yaml": "6e305a21e3d779119abada75be23618f3430d1f4faf1bc4e8caa37ba5405bbcf",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/schema.md": "dcc30c5bf31532043deddbdedc00f03ebcc386dabcc9fcfdcd85dab477871731",
+        "scripts/day0ctl.py": "9abdb4dc506624615359849e7485c2ad5a19d9deb8cf943b728d315bef909a1f",
+        "scripts/self_test.py": "11b44c5a74e42aaef6cc30bc09a6adca07a5573381c14f6939c216bc815cb225",
+        "SKILL.md": "8bd74176df8edc3fc0ba1ed7c6cbf2de4eef11fb168093a5d56352fb078a2304"
+      }
+    },
+    {
       "id": "domain-modeling",
       "name": "domain-modeling",
       "scope": "user",
@@ -152,6 +221,33 @@
         "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
         "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
         "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+      }
+    },
+    {
+      "id": "drawio",
+      "name": "drawio",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "创建、编辑与导出 Draw.io 图示",
+      "path": "skills/drawio",
+      "license": "Apache-2.0",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/jgraph/drawio-mcp",
+        "path": "plugins/codex/drawio/skills/drawio",
+        "ref": "a4515e4dc986e22d369551ac213399d6fb653bde"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "5e1d5460fc6a2da7da98ad851841ec174670f42c0b7339835cc709957b9328f7"
+      },
+      "changes": [
+        "Included the pinned upstream Apache-2.0 license; excluded the personal installation record."
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "006e61a1b8c97620d75ceacc283de7a363d78da7da9a5b92203324c40feb7232",
+        "SKILL.md": "5e1d5460fc6a2da7da98ad851841ec174670f42c0b7339835cc709957b9328f7"
       }
     },
     {
@@ -320,6 +416,108 @@
       }
     },
     {
+      "id": "humanizer-zh",
+      "name": "humanizer-zh",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "润色中文，减少 AI 痕迹与翻译腔",
+      "path": "skills/humanizer-zh",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/ai-zixun/humanizer-zh",
+        "path": ".",
+        "ref": "f75f1ac9735c4f10da1bba0148e0ea7228c5c3b3"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        ".claude-plugin/plugin.json": "b23fad0bf38edabf6a18154f46c530325a00298c9391d882d05ce8eaada7028b",
+        ".github/workflows/release.yml": "069a935894cbb2ffb5cd969dcb86d7aa7e4cd1f518bc2ed7ade709214f1c2e2a",
+        ".gitignore": "9a5362d02d391f203e8fa3828b6535fc1f128863ae4aada5a400f1baa128e4f8",
+        "agents/openai.yaml": "1e24f08c08b6c299b847d33ef3a89db69fef2bc36a600be0185f8670ec291c13",
+        "CHANGELOG.md": "afedacc97cdd398385c69c53b988ef22827d206d3dff4537750c66d16aba0909",
+        "CLAUDE.md": "c8d65b95534869c6017b050f474ae2277e99d30d91de25e4a843b394e350c8ee",
+        "LICENSE": "609132fb364baa7688c086c5baa267ebb88edf32ea431d2dbf3e745d39576d3f",
+        "README.en.md": "ffc44ca33c6d87b25d514311584467f1adce8e246a5478a643885d000222d7ac",
+        "README.md": "7fdde2bc15316b842853c4b4b136d7355a6b3d485fc6d6e8a7c94d6f4f8d3ae9",
+        "references/corpus-quickpick.md": "b96642965981e96d89feb7561c3f9ec54d197c0a44194584c0deb0500bed9074",
+        "references/corpus.md": "bc413788f8afbd051dc200993e56f7fb285e2be0fdb63e1fea249f21097ddef8",
+        "references/patterns.md": "d65f714ea6f160cfb030c374ad33bf77f15a86c70ee82a4d18236a8ac0ff6491",
+        "references/voices/fengtang.md": "b7c2f0cfb564a10d37ef0e400892287afa33c8ba85d6743610d1a1e18b86dbd3",
+        "references/voices/hefan.md": "f9d0532de5ef5b4f4cbc7176724120af804a4209f74409cc4a7a33d22f0ae9a4",
+        "references/voices/helaoshi.md": "fbb169d2f0fedb1ae25300840123a3b17c1527c0add2d80df2a6ef4f6ba67cfb",
+        "references/voices/index.md": "149a5314b76bf1edef4094d0dc5c20f302b6ee516fa91613e61ab0a473bedc07",
+        "references/voices/lishanglong.md": "4a5b64649c63be4f074e695f79699127e57e2d4f217b61fc1295e0b3d74456f0",
+        "references/voices/liuzichao.md": "375f8f104c2e8c2af5182f10b5feeb128368dd6f5caf821b4fc6bf4ce8a16b34",
+        "references/voices/lixiaolai.md": "ff516c95f6eec46094c2595442a597ad5aa3bc79950fca7875791ee1f4429b07",
+        "references/voices/luozhenyu.md": "69795cf2abf05c5dca581d9eb1f6f01818d4b10d78170578ae23cc73987394cf",
+        "references/voices/wujun.md": "8a5951493e10d5838e5a799c001017d1b502579b3212f047e48a3034719ad9d9",
+        "SKILL.md": "d7ef1115ef9f05697bf08dc0218983e0c8fcb472e5c33eb4bb1d6faa200c0a32",
+        "VERSION": "64d23f858ef51b0f996e4966d4e27c0371b437e2d2787890b1f7ad22d4ec5663"
+      },
+      "changes": [],
+      "files_sha256": {
+        ".claude-plugin/plugin.json": "b23fad0bf38edabf6a18154f46c530325a00298c9391d882d05ce8eaada7028b",
+        ".github/workflows/release.yml": "069a935894cbb2ffb5cd969dcb86d7aa7e4cd1f518bc2ed7ade709214f1c2e2a",
+        ".gitignore": "9a5362d02d391f203e8fa3828b6535fc1f128863ae4aada5a400f1baa128e4f8",
+        "agents/openai.yaml": "1e24f08c08b6c299b847d33ef3a89db69fef2bc36a600be0185f8670ec291c13",
+        "CHANGELOG.md": "afedacc97cdd398385c69c53b988ef22827d206d3dff4537750c66d16aba0909",
+        "CLAUDE.md": "c8d65b95534869c6017b050f474ae2277e99d30d91de25e4a843b394e350c8ee",
+        "LICENSE": "609132fb364baa7688c086c5baa267ebb88edf32ea431d2dbf3e745d39576d3f",
+        "README.en.md": "ffc44ca33c6d87b25d514311584467f1adce8e246a5478a643885d000222d7ac",
+        "README.md": "7fdde2bc15316b842853c4b4b136d7355a6b3d485fc6d6e8a7c94d6f4f8d3ae9",
+        "references/corpus-quickpick.md": "b96642965981e96d89feb7561c3f9ec54d197c0a44194584c0deb0500bed9074",
+        "references/corpus.md": "bc413788f8afbd051dc200993e56f7fb285e2be0fdb63e1fea249f21097ddef8",
+        "references/patterns.md": "d65f714ea6f160cfb030c374ad33bf77f15a86c70ee82a4d18236a8ac0ff6491",
+        "references/voices/fengtang.md": "b7c2f0cfb564a10d37ef0e400892287afa33c8ba85d6743610d1a1e18b86dbd3",
+        "references/voices/hefan.md": "f9d0532de5ef5b4f4cbc7176724120af804a4209f74409cc4a7a33d22f0ae9a4",
+        "references/voices/helaoshi.md": "fbb169d2f0fedb1ae25300840123a3b17c1527c0add2d80df2a6ef4f6ba67cfb",
+        "references/voices/index.md": "149a5314b76bf1edef4094d0dc5c20f302b6ee516fa91613e61ab0a473bedc07",
+        "references/voices/lishanglong.md": "4a5b64649c63be4f074e695f79699127e57e2d4f217b61fc1295e0b3d74456f0",
+        "references/voices/liuzichao.md": "375f8f104c2e8c2af5182f10b5feeb128368dd6f5caf821b4fc6bf4ce8a16b34",
+        "references/voices/lixiaolai.md": "ff516c95f6eec46094c2595442a597ad5aa3bc79950fca7875791ee1f4429b07",
+        "references/voices/luozhenyu.md": "69795cf2abf05c5dca581d9eb1f6f01818d4b10d78170578ae23cc73987394cf",
+        "references/voices/wujun.md": "8a5951493e10d5838e5a799c001017d1b502579b3212f047e48a3034719ad9d9",
+        "SKILL.md": "d7ef1115ef9f05697bf08dc0218983e0c8fcb472e5c33eb4bb1d6faa200c0a32",
+        "VERSION": "64d23f858ef51b0f996e4966d4e27c0371b437e2d2787890b1f7ad22d4ec5663"
+      }
+    },
+    {
+      "id": "image-release",
+      "name": "image-release",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "推理镜像命名、打包、归档与交付",
+      "path": "skills/image-release",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "agents/openai.yaml": "27748b7f2f4428a5dffe81e2ffbfcde0657e5d50d71f6368079806195ab4e2ce",
+        "references/release-workflow.md": "1e5174eb13d4c0b30b07eca029a3a165e167b9efecb1920cba9e0b6965140b6d",
+        "scripts/gen_image_name.py": "0eb7ff79d2c2dccd36459fbe66386d3ff042357d5312f73a5fe38d8997ba2999",
+        "SKILL.md": "91e0bd6c25d3d2e8cb01e0122622a7ef22e1f4fc54bc36422c129601de2e3b74"
+      },
+      "changes": [
+        "Generalized environment-specific paths/hosts and synchronized bundled script provenance where applicable: references/release-workflow.md, scripts/gen_image_name.py, SKILL.md",
+        "Included the collection MIT license for the owner-supplied local snapshot."
+      ],
+      "files_sha256": {
+        "agents/openai.yaml": "27748b7f2f4428a5dffe81e2ffbfcde0657e5d50d71f6368079806195ab4e2ce",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/release-workflow.md": "f3047fcaa00f1538ddb34693ecb22048850b9a027a29f59770f9ed8158bd8393",
+        "scripts/gen_image_name.py": "2d766d8d84c4a80b34d2d036840e19117a73c92d18be05b9427ecc7a55523ee3",
+        "SKILL.md": "4686d453d7f06d6630421c5dfd6a8080c74f48b1eb46d67850d0dbee895e0be9"
+      }
+    },
+    {
       "id": "imagegen",
       "name": "imagegen",
       "scope": "system",
@@ -396,6 +594,88 @@
         "HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
         "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
         "SKILL.md": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392"
+      }
+    },
+    {
+      "id": "inference-benchmark-matrix",
+      "name": "inference-benchmark-matrix",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "固定负载、单变量 A/B 推理性能矩阵",
+      "path": "skills/inference-benchmark-matrix",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "agents/openai.yaml": "d9c6c4fea743f33a66b183e887547947114e625b7e5fc19def3e91eb0a54b4de",
+        "references/deepseek-v41-a3.md": "15df3e942082ce130e996a9307858c68bc003ebbaf444ba7f6c2d9b40e7868b8",
+        "references/example-deepseek-v41-a5.json": "67dd243852d5e73f5f23777854dcf5b95600967aec399328dd1ebe200e6e7575",
+        "references/execution-contract.md": "6e5c8d7bd0f5e7213894615c179fb3fb2ef7fec40af04b92e4fc3306d2b21208",
+        "references/mode-a.md": "cfcf6450bdc180280418e9d53e40b7b7984b4dc369f2f934f2cc02dbd024ff2a",
+        "scripts/benchmark_new_v1.5.sh": "b14a793aae67afa6f34aa5cfde1f5ec6fdd2af9dfb23c8a54a0424e9ecbac9bc",
+        "scripts/mode_a.py": "70fcf93bb961b03439644b2099d50e3203a5d115c4e3177be14f9950cdbdda38",
+        "SKILL.md": "6648de92645e29290f110094a32a8820fba24e1367944e11eabb81d686ae33b3"
+      },
+      "changes": [
+        "Generalized environment-specific paths/hosts and synchronized bundled script provenance where applicable: references/deepseek-v41-a3.md, references/example-deepseek-v41-a5.json, references/execution-contract.md, scripts/benchmark_new_v1.5.sh, SKILL.md",
+        "Included the collection MIT license for the owner-supplied local snapshot."
+      ],
+      "files_sha256": {
+        "agents/openai.yaml": "d9c6c4fea743f33a66b183e887547947114e625b7e5fc19def3e91eb0a54b4de",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/deepseek-v41-a3.md": "4209ad541e4e10735e2c33c87eebedae2c4a448f82d21f3207be570a9f7d9d87",
+        "references/example-deepseek-v41-a5.json": "e7c80d3c01d907c7694c4243f0f271781d9a99db296ecd3fb09e6caba1211173",
+        "references/execution-contract.md": "3b7ad27b5d80dae8010a9660d5a8a4b47e3ebd4c96cb088c0575e9a5ef49d122",
+        "references/mode-a.md": "cfcf6450bdc180280418e9d53e40b7b7984b4dc369f2f934f2cc02dbd024ff2a",
+        "scripts/benchmark_new_v1.5.sh": "2cf49c2656549569d7be41367564a6a8ea7237190cc9ae18917c8b18c4a947b1",
+        "scripts/mode_a.py": "70fcf93bb961b03439644b2099d50e3203a5d115c4e3177be14f9950cdbdda38",
+        "SKILL.md": "a48cca0c6e1444159a55aa7b62564c6ed38668233007f79c935c024a82a7fa48"
+      }
+    },
+    {
+      "id": "inference-root-cause",
+      "name": "inference-root-cause",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "推理故障的根因分析与证据链整理",
+      "path": "skills/inference-root-cause",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [
+        "day0-workspace"
+      ],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "agents/openai.yaml": "6b9b6e7351e689a3a7279f6d0761125281c9fb1372594781909684038014d3ce",
+        "assets/case-template.yaml": "5c561672752a38cd5a6f2c06a48da44fc39c43f293ea04546169429a8c041002",
+        "assets/root-cause-report-template.md": "10d9ba7a6e5f2ffa8db6fbf1a84dcbfc5d78996c3b2806f0656cfdc932d1a503",
+        "scripts/check_evidence.py": "affde944eff56c71ceb6be58123ae418ac75bb7eb95b9edc6a2f719151722569",
+        "scripts/init_case.py": "ffdf2d858eb51a5389ea787ad6d13cbae7bfd968ee4daaca95304b0394fa2c47",
+        "SKILL.md": "cbec3b3107b5663f7e7a252b71d943ad71746e2ac2860a465f2ecd945095534a"
+      },
+      "changes": [
+        "Generalized environment-specific paths/hosts and synchronized bundled script provenance where applicable: scripts/init_case.py, SKILL.md",
+        "Included the collection MIT license for the owner-supplied local snapshot."
+      ],
+      "files_sha256": {
+        "agents/openai.yaml": "6b9b6e7351e689a3a7279f6d0761125281c9fb1372594781909684038014d3ce",
+        "assets/case-template.yaml": "5c561672752a38cd5a6f2c06a48da44fc39c43f293ea04546169429a8c041002",
+        "assets/root-cause-report-template.md": "10d9ba7a6e5f2ffa8db6fbf1a84dcbfc5d78996c3b2806f0656cfdc932d1a503",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "scripts/check_evidence.py": "affde944eff56c71ceb6be58123ae418ac75bb7eb95b9edc6a2f719151722569",
+        "scripts/init_case.py": "bc7216be7a710454871f259bf16ba15e5b8d611d82353a1df7ce9f3bee69c12e",
+        "SKILL.md": "295077214676018defe3331462e84ef03c36fc10850d76750a5f4db7f75a2177"
       }
     },
     {
@@ -485,6 +765,93 @@
       }
     },
     {
+      "id": "perf-benchmark",
+      "name": "perf-benchmark",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "从原生 benchmark CSV 生成性能 Excel",
+      "path": "skills/perf-benchmark",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "agents/openai.yaml": "08ba08d7c325de14e5bf295f8b4565f3260b4914e0b50ee510c81df2b15deb6f",
+        "references/report-spec.md": "f44745c59d71811d53bc5be5ac4ce50912c6388003a67635e78940b234cfffdf",
+        "scripts/build_perf_xlsx.ps1": "a106f1bd29ffcc1efe30e1eb35526cfb81779d306a1cc8bf288c65fbbc7ba691",
+        "SKILL.md": "2d92931ddaa6ee1448dcfcfe63e4d424a36c842cbe53005594765e5e98da1208"
+      },
+      "changes": [
+        "Generalized environment-specific paths/hosts and synchronized bundled script provenance where applicable: references/report-spec.md",
+        "Included the collection MIT license for the owner-supplied local snapshot."
+      ],
+      "files_sha256": {
+        "agents/openai.yaml": "08ba08d7c325de14e5bf295f8b4565f3260b4914e0b50ee510c81df2b15deb6f",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/report-spec.md": "969e0175e3bdcc785b641485543682a9363b9b9abf368a50e57f3482a2d4cc8d",
+        "scripts/build_perf_xlsx.ps1": "a106f1bd29ffcc1efe30e1eb35526cfb81779d306a1cc8bf288c65fbbc7ba691",
+        "SKILL.md": "2d92931ddaa6ee1448dcfcfe63e4d424a36c842cbe53005594765e5e98da1208"
+      }
+    },
+    {
+      "id": "perf-e2e-compare",
+      "name": "perf-e2e-compare",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "分散性能数据归一化与 E2E 吞吐对比",
+      "path": "skills/perf-e2e-compare",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [
+        "perf-benchmark",
+        "day0-workspace"
+      ],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "agents/openai.yaml": "a2819400005fa168fddf958df184ab99e7f358843cef66bc8af9f174462c2119",
+        "references/runtime-metadata.md": "1cb359c804214144c2a38608302a25e09a2a109a09c61b9ae5a06c7dc7aa83cf",
+        "references/scattered-input-contract.md": "1258cf54a2c774a777e8a7cb79fd6d3589554bae3a34fb969ea0fc365e0add8f",
+        "references/workbook-contract.md": "e4a57c8926c2242293159319df3be99c7f6346b170f8bd9d4012225a80391e8a",
+        "references/workbook-presentation.md": "8d88c54ae09c528ac01d81fbb38de00d9505a0d189b4c5d0b0e8fb0cb467b75f",
+        "scripts/build_scattered_perf_xlsx.ps1": "aa19c35b91f736d4d0617dfe8d36f4c94386390d9003660dc044cd09f70f9049",
+        "scripts/format_workbook_presentation.ps1": "780c37a1ed794fdd7c9aa0444bfbe25c480f3f21c06fea32aa86f0c0d3fbfe66",
+        "scripts/normalize_scattered_perf.py": "1153b05762fc497b391285e18fc44c12d139b04b5a2c8850acae0a70dfc1cdf4",
+        "scripts/update_e2e_compare.ps1": "a66ff6c187ff660bb895ad8c8dbe692816f6be6cf6bc5f640a7b48c2689e82ff",
+        "scripts/write_runtime_metadata.ps1": "fc956b7237303906951c4854200fb278a83c5b8b03d58d129ac03a76a2799140",
+        "SKILL.md": "66aacecdfb0391d2e94c8d60cec8560f97d482277565112332c8269551e6e9a0",
+        "tests/test_format_workbook_presentation.py": "15551057fc0d2806d0cc99813ced1441fa5a8ccc1ef8bc83a04479fc4a5efa38"
+      },
+      "changes": [
+        "Normalized text line endings to LF; retained any UTF-8 BOM required by PowerShell 5.1.",
+        "Included the collection MIT license for the owner-supplied local snapshot."
+      ],
+      "files_sha256": {
+        "agents/openai.yaml": "a2819400005fa168fddf958df184ab99e7f358843cef66bc8af9f174462c2119",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/runtime-metadata.md": "1cb359c804214144c2a38608302a25e09a2a109a09c61b9ae5a06c7dc7aa83cf",
+        "references/scattered-input-contract.md": "1258cf54a2c774a777e8a7cb79fd6d3589554bae3a34fb969ea0fc365e0add8f",
+        "references/workbook-contract.md": "e4a57c8926c2242293159319df3be99c7f6346b170f8bd9d4012225a80391e8a",
+        "references/workbook-presentation.md": "8d88c54ae09c528ac01d81fbb38de00d9505a0d189b4c5d0b0e8fb0cb467b75f",
+        "scripts/build_scattered_perf_xlsx.ps1": "aa19c35b91f736d4d0617dfe8d36f4c94386390d9003660dc044cd09f70f9049",
+        "scripts/format_workbook_presentation.ps1": "780c37a1ed794fdd7c9aa0444bfbe25c480f3f21c06fea32aa86f0c0d3fbfe66",
+        "scripts/normalize_scattered_perf.py": "1153b05762fc497b391285e18fc44c12d139b04b5a2c8850acae0a70dfc1cdf4",
+        "scripts/update_e2e_compare.ps1": "a66ff6c187ff660bb895ad8c8dbe692816f6be6cf6bc5f640a7b48c2689e82ff",
+        "scripts/write_runtime_metadata.ps1": "fc956b7237303906951c4854200fb278a83c5b8b03d58d129ac03a76a2799140",
+        "SKILL.md": "66aacecdfb0391d2e94c8d60cec8560f97d482277565112332c8269551e6e9a0",
+        "tests/test_format_workbook_presentation.py": "6b89b2bccdd8fefbee5edeb7e96d748899352b8b0eb41a8cb69c155d8cc1aa64"
+      }
+    },
+    {
       "id": "personal-kb-summarizer",
       "name": "personal-kb-summarizer",
       "scope": "user",
@@ -551,6 +918,33 @@
         "references/workflows.md": "621d2b8542a91d1d5cd65a5a7774ea250683e4c217e00e9c90d301eb6367d86e",
         "scripts/playwright_cli.sh": "3fce0ea2b9875179f701d9f4c03425545c441b2769cd6c6df964cc7d1d1dbfa8",
         "SKILL.md": "c52cc95125b720cdc3c9829b0294c2752d4ae9b85a5282aa153da8bba929af87"
+      }
+    },
+    {
+      "id": "presentation-design",
+      "name": "presentation-design",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "演示内容的结构、表达与设计评估",
+      "path": "skills/presentation-design",
+      "license": "MIT",
+      "source": {
+        "kind": "upstream-pinned",
+        "url": "https://github.com/jwynia/agent-skills",
+        "path": "skills/general/communication/presentation-design",
+        "ref": "e02ec7e226a6e4f8419fd3b88a1d8e472d421b32"
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "SKILL.md": "00ea7fd7fb33358e7959ddde8c42ebc97a752427be545e89f5f12d11ab875f71"
+      },
+      "changes": [
+        "Included standard MIT text with the author declared in the pinned SKILL.md; preserved its license metadata."
+      ],
+      "files_sha256": {
+        "LICENSE.txt": "e7b06ae9e893e29b7525a93e86efd3e9d0dda2a72429f2a934be9368ae2749d9",
+        "SKILL.md": "00ea7fd7fb33358e7959ddde8c42ebc97a752427be545e89f5f12d11ab875f71"
       }
     },
     {
@@ -1128,6 +1522,24 @@
       },
       "dependencies": [],
       "reason": "No redistribution license found for the installed snapshot; retained as an inventory entry."
+    },
+    {
+      "id": "pptx",
+      "name": "pptx",
+      "scope": "user",
+      "distribution": "official-install",
+      "description": "创建、编辑和检查 PowerPoint 文件；本地受限快照仅提供上游安装索引",
+      "path": null,
+      "license": "Proprietary (installed snapshot)",
+      "source": {
+        "kind": "installed-snapshot-unverified",
+        "url": "https://github.com/anthropics/skills/tree/main/skills/pptx",
+        "path": "skills/pptx",
+        "ref": null
+      },
+      "dependencies": [],
+      "local_license_sha256": "79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa",
+      "reason": "The installed snapshot license prohibits redistribution. Its equivalence to the public upstream version has not been established; install an appropriately licensed upstream version directly. No local pptx source is bundled."
     }
   ]
 }

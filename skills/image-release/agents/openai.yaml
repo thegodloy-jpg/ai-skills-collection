@@ -1,0 +1,6 @@
+interface:
+  display_name: "Image Release"
+  short_description: "Safely package and archive inference images"
+  default_prompt: "Use $image-release to package and archive the current inference image safely."
+policy:
+  allow_implicit_invocation: true

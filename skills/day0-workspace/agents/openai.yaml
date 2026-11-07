@@ -1,0 +1,7 @@
+interface:
+  display_name: "DAY0 Model Workspace"
+  short_description: "Route model artifacts into the global DAY0 workspace"
+  default_prompt: "Use $day0-workspace to resolve this model and allocate the correct DAY0 record directory."
+
+policy:
+  allow_implicit_invocation: true

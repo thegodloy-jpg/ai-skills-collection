@@ -1,0 +1,6 @@
+interface:
+  display_name: "Inference Root Cause"
+  short_description: "分析推理引擎故障根因、工作原理、排他实验与修复验证流程"
+  default_prompt: "Use $inference-root-cause to reconstruct this inference failure, rank competing hypotheses, and produce an evidence-backed root-cause report."
+policy:
+  allow_implicit_invocation: true

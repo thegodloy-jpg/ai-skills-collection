@@ -1,0 +1,4 @@
+interface:
+  display_name: "性能数据建表与 E2E 对比"
+  short_description: "汇总分散 CSV/XLSX 或修复现有性能表并生成 E2E 对比"
+  default_prompt: "使用 $perf-e2e-compare 汇总分散的性能数据或修复现有工作簿，并生成基线与调优的 E2E 吞吐对比。"
