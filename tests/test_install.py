@@ -53,7 +53,7 @@ class InstallTests(unittest.TestCase):
     def test_all_installs_exactly_bundled_entries(self):
         catalog = json.loads((REPO_ROOT / "catalog.json").read_text(encoding="utf-8-sig"))
         expected = {entry["name"] for entry in catalog["skills"] if entry["distribution"] == "bundled"}
-        self.assertEqual(len(expected), 22)
+        self.assertEqual(len(expected), 23)
         with tempfile.TemporaryDirectory() as temporary:
             destination = Path(temporary) / "skills"
             result = self.run_installer(destination, "--all")

@@ -2,7 +2,7 @@
 
 把常用 AI 技能整理为可安装、可追溯的合集，面向 Codex，也可按需复制到支持 Agent Skills 的工具中。
 
-本仓库记录 **43 项技能**：**22 项提供完整文件**，另 **21 项提供官方安装说明与用途索引**。包含小红书笔记中的 10 项技能，以及它们运行所需的 3 项共享依赖。清单快照日期：2026-10-10。
+本仓库记录 **44 项技能**：**23 项提供完整文件**，另 **21 项提供官方安装说明与用途索引**。包含小红书笔记中的 10 项技能，以及它们运行所需的 3 项共享依赖。清单更新日期：2026-11-07；上游固定版本以 `catalog.json` 中各条目为准。
 
 ## 快速安装
 
@@ -28,7 +28,7 @@ python install.py --skills grill-me frontend-design
 python install.py --skills grill-with-docs --dest ./my-skills
 ```
 
-`--all` 安装本仓库可分发的 22 项，不包含需要通过产品官方入口安装的 21 项。已有技能的使用者可先安装到独立目录，再自行比较需要更新的内容。
+`--all` 安装本仓库可分发的 23 项，不包含需要通过产品官方入口安装的 21 项。已有技能的使用者可先安装到独立目录，再自行比较需要更新的内容。
 
 ## 笔记中的 10 项
 
@@ -55,6 +55,7 @@ python install.py --skills grill-with-docs --dest ./my-skills
 | [connect-claude-code-api](skills/connect-claude-code-api/SKILL.md) | 将外部模型 API 接入 Claude Code |
 | [life-decision-guide](skills/life-decision-guide/SKILL.md) | 基于《高性价比人生指南》辅助决策 |
 | [personal-kb-summarizer](skills/personal-kb-summarizer/SKILL.md) | 将对话整理为知识库结构化摘要 |
+| [technical-doc-workflow](skills/technical-doc-workflow/SKILL.md) | 多轮完善 Markdown 的内容和结构，按需转为 Word 并检查排版 |
 | [playwright](skills/playwright/SKILL.md) | 通过 Playwright 自动操作浏览器 |
 | [imagegen](skills/imagegen/SKILL.md) | 生成和编辑图片 |
 | [openai-docs](skills/openai-docs/SKILL.md) | 检索官方 OpenAI 文档 |
@@ -68,6 +69,8 @@ python install.py --skills grill-with-docs --dest ./my-skills
 ```text
 $grill-me 帮我梳理这个需求
 $tdd 为这个功能先写行为测试
+$technical-doc-workflow 整理这份 MD 草稿，先调整章节逻辑
+$technical-doc-workflow 将定稿 MD 按参考模板转为 Word
 ```
 
 `grill-me`、`grill-with-docs`、`improve-codebase-architecture`、`setup-matt-pocock-skills`、`handoff`、`triage` 保留上游的手动调用策略。
@@ -80,6 +83,7 @@ $tdd 为这个功能先写行为测试
 - GitHub/GitLab 工作流：使用相关功能时需要 `gh` / `glab` 及相应账户访问权限。
 - `life-decision-guide`：需要读取或联网获取 [HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) 正文，书籍全文未打包。
 - `setup-matt-pocock-skills`：安装不会自动执行项目配置；实际调用时按技能说明配置目标项目。
+- `technical-doc-workflow`：默认先交互修改 Markdown，明确要求转 Word 后再转换。MD 检查脚本需要 `markdown-it-py`，Word 转换脚本还需要 `python-docx`、`Pillow` 和 `lxml`；实际排版验收需要可用的 Word 或相应渲染环境。
 
 复制目录即可用于其他支持 Agent Skills 的客户端，但工具名称、连接器和运行环境仍需由目标客户端提供。[官方技能说明](https://learn.chatgpt.com/docs/build-skills)介绍了技能的结构与加载方式。
 
@@ -91,10 +95,10 @@ Google Drive、Pages、Work Pets、Documents、PDF、Presentations、Spreadsheet
 
 ## 来源、许可与维护
 
-- [catalog.json](catalog.json)：全部 43 项的用途、来源、分发方式、依赖和完整文件 SHA-256。
+- [catalog.json](catalog.json)：全部 44 项的用途、来源、分发方式、依赖和完整文件 SHA-256。
 - [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)：第三方来源、版本和许可，以及合集中的改动说明。
 - [licenses/](licenses/)：从上游固定提交取得的许可正文与声明。
 - 完整复制第三方技能目录及其 `agents/`、`references/`、`scripts/`、`assets/`；排除编译缓存和凭据文件。
-- 本仓库的原创整理、安装脚本和 3 项仓库所有者提供的原创技能使用 [MIT](LICENSE)。第三方技能保留各自许可证，根 MIT 不替代第三方授权。
+- 本仓库的原创整理、安装脚本和 4 项仓库所有者提供的原创技能使用 [MIT](LICENSE)。第三方技能保留各自许可证，根 MIT 不替代第三方授权。
 
 这是独立整理的技能合集，各项目的版权与维护归原作者所有。更新第三方内容时应同时更新来源、许可、依赖与文件校验值。

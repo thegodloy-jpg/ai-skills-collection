@@ -22,7 +22,7 @@ The HowToLiveBetter book text is licensed under [CC BY 4.0](licenses/HowToLiveBe
 - Skill source files are preserved byte for byte, except `skills/life-decision-guide/README.md`, which has a prominent added note clarifying that references to “this repository” in the upstream instructions refer to HowToLiveBetter. The note points to the collection installation instructions. No skill execution instructions were changed.
 - Required upstream root licenses and Vercel's notice were added inside the corresponding skill directories so a standalone installation retains attribution.
 - Python bytecode caches were excluded.
-- Three owner-supplied original skills (`build-technical-learning-loop`, `connect-claude-code-api`, `personal-kb-summarizer`) are distributed under this collection's MIT license, also copied into those skill directories.
+- Four owner-supplied original skills (`build-technical-learning-loop`, `connect-claude-code-api`, `personal-kb-summarizer`, `technical-doc-workflow`) are distributed under this collection's MIT license, also copied into those skill directories. `technical-doc-workflow` was added on 2026-11-07; existing upstream snapshots remain unchanged.
 - `original_files_sha256` records the installed source files before these packaging changes; `files_sha256` records the actual distributable files checked by the installer.
 
 ## Indexed content that is not bundled

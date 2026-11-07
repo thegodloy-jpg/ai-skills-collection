@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-10-10",
+  "snapshot_date": "2026-11-07",
   "repository": "https://github.com/thegodloy-jpg/ai-skills-collection",
   "skills": [
     {
@@ -699,6 +699,45 @@
         "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
         "SKILL.md": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
         "tests.md": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a"
+      }
+    },
+    {
+      "id": "technical-doc-workflow",
+      "name": "technical-doc-workflow",
+      "scope": "user",
+      "distribution": "bundled",
+      "description": "多轮完善 Markdown 的内容和结构，按需转为 Word 并检查排版",
+      "path": "skills/technical-doc-workflow",
+      "license": "MIT",
+      "source": {
+        "kind": "owner-supplied",
+        "url": "https://github.com/thegodloy-jpg/ai-skills-collection",
+        "path": null,
+        "ref": null
+      },
+      "dependencies": [],
+      "explicit_invocation_only": false,
+      "original_files_sha256": {
+        "agents/openai.yaml": "99a5538ce9cbbc650cb28020ab333b4926baeeb95797581d64c2f2bcbec56fc5",
+        "references/markdown-rules.md": "cc9ac642125608b96b6a9fa52c5b279f0d499a48a5407116b84d57db49fe3cc0",
+        "references/wings-profile.md": "2f96ab62ffa554424f2452476e9c5d73d02eabe0d95c9ea6b306b2f49e90048e",
+        "references/word-rules.md": "2b65f32a0ce0453f11afc1a4a749b7c2fff314695d536c031b286006fe78fe4f",
+        "scripts/build_word.py": "2020ced485e7b95f782a525cc12fd85f18d707606384c38064a3968f354b90b5",
+        "scripts/check_markdown.py": "5b383b3d4d283dc4f59cb1a9eb2ee3d04119571d7381b4dc5be160ebb08f6c3d",
+        "SKILL.md": "68b69ef3dd0d1ee5f97745efa892f9259401a3bd90935cceb1bbbfdf22080f0d"
+      },
+      "changes": [
+        "Added the collection MIT license as LICENSE.txt for standalone installations."
+      ],
+      "files_sha256": {
+        "agents/openai.yaml": "99a5538ce9cbbc650cb28020ab333b4926baeeb95797581d64c2f2bcbec56fc5",
+        "LICENSE.txt": "43aa5fa9a084e485ef0fb2c3eed89d28e61306c2cd14cb9a6eca24eac43dfa28",
+        "references/markdown-rules.md": "cc9ac642125608b96b6a9fa52c5b279f0d499a48a5407116b84d57db49fe3cc0",
+        "references/wings-profile.md": "2f96ab62ffa554424f2452476e9c5d73d02eabe0d95c9ea6b306b2f49e90048e",
+        "references/word-rules.md": "2b65f32a0ce0453f11afc1a4a749b7c2fff314695d536c031b286006fe78fe4f",
+        "scripts/build_word.py": "2020ced485e7b95f782a525cc12fd85f18d707606384c38064a3968f354b90b5",
+        "scripts/check_markdown.py": "5b383b3d4d283dc4f59cb1a9eb2ee3d04119571d7381b4dc5be160ebb08f6c3d",
+        "SKILL.md": "68b69ef3dd0d1ee5f97745efa892f9259401a3bd90935cceb1bbbfdf22080f0d"
       }
     },
     {
